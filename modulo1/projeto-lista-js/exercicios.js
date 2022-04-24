@@ -75,23 +75,23 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
+  const checaStringsMesmoTamanho = string1.length === string2.length;
+  return checaStringsMesmoTamanho;
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
+  return array[0];
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+  const ultimoElemento = array[(2, -1)];
+  return ultimoElemento;
 }
 
 // EXERCÍCIO 11
-function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
-}
+function trocaPrimeiroEUltimo(array) {}
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
