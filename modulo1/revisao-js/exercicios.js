@@ -28,25 +28,56 @@ function retornaArrayOrdenado(array) {
 } */
 
 // EXERCÍCIO 04
-const array = [1, 2, 3, 4, 5, 6];
+/* let array = [1, 2, 3, 4, 5, 6];
 
-function retornaNumerosPares(array) {
-    if (value % 2 === 0) {
-        return value;
-    }
-
-    const numerosPares = array.filter(retornaNumerosPares);
-    console.log(numerosPares);
-}
+ function retornaNumerosPares(array) {
+    const resultado = array.filter((numero) => numero % 2 === 0);
+    console.log(resultado)
+    return resultado;
+} */
 
 // EXERCÍCIO 05
-function retornaNumerosParesElevadosADois(array) {}
+/* function retornaNumerosParesElevadosADois(array) {
+    const numerosPares = array
+        .map((numero, index, array) => numero ** 2)
+        .filter((numero) => numero % 2 === 0);
+    console.log(numerosPares);
+    return numerosPares;
+} */
 
 // EXERCÍCIO 06
-function retornaMaiorNumero(array) {}
+/* let array = [1, 5, 3, 7, 5, 2];
+
+function retornaMaiorNumero(array) {
+    let maiorNumero = array[0];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > maiorNumero) {
+            maiorNumero = array[i];
+        }
+    }
+    return maiorNumero;
+} */
 
 // EXERCÍCIO 07
-function retornaObjetoEntreDoisNumeros(num1, num2) {}
+
+function retornaObjetoEntreDoisNumeros(num1, num2) {
+    if (num1 > num2) {
+        maiorNumero = num1;
+        menorNumero = num2;
+    } else {
+        maiorNumero = num2;
+        menorNumero = num1;
+    }
+
+    const maiorDivisivelPorMenor = maiorNumero % menorNumero === 0;
+    const diferenca = maiorNumero - menorNumero;
+
+    return (objeto = {
+        maiorNumero: maiorNumero,
+        maiorDivisivelPorMenor: maiorDivisivelPorMenor,
+        diferenca: diferenca,
+    });
+}
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {}
