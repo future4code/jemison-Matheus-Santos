@@ -37,16 +37,16 @@ function retornaArrayOrdenado(array) {
 } */
 
 // EXERCÍCIO 05
-/* function retornaNumerosParesElevadosADois(array) {
+function retornaNumerosParesElevadosADois(array) {
     const numerosPares = array
         .map((numero, index, array) => numero ** 2)
         .filter((numero) => numero % 2 === 0);
     console.log(numerosPares);
     return numerosPares;
-} */
+}
 
 // EXERCÍCIO 06
-/* let array = [1, 5, 3, 7, 5, 2];
+let array = [1, 5, 3, 7, 5, 2];
 
 function retornaMaiorNumero(array) {
     let maiorNumero = array[0];
@@ -56,11 +56,11 @@ function retornaMaiorNumero(array) {
         }
     }
     return maiorNumero;
-} */
+}
 
 // EXERCÍCIO 07
 
-/* function retornaObjetoEntreDoisNumeros(num1, num2) {
+function retornaObjetoEntreDoisNumeros(num1, num2) {
     if (num1 > num2) {
         maiorNumero = num1;
         menorNumero = num2;
@@ -77,7 +77,7 @@ function retornaMaiorNumero(array) {
         maiorDivisivelPorMenor: maiorDivisivelPorMenor,
         diferenca: diferenca,
     });
-} */
+}
 
 // EXERCÍCIO 08
 
@@ -90,7 +90,7 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {}
 function retornaSegundoMaiorESegundoMenor(array) {}
 
 // EXERCÍCIO 11
-/* const filme = {
+const filme = {
     nome: "O Diabo Veste Prada",
     ano: 2006,
     diretor: "David Frankel",
@@ -101,10 +101,10 @@ function retornaChamadaDeFilme(filme) {
     const chamadaDoFilme = `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]}, ${filme.atores[1]}, ${filme.atores[2]}, ${filme.atores[3]}.`;
 
     return chamadaDoFilme;
-} */
+}
 
 // EXERCÍCIO 12
-/* const pessoa = {
+const pessoa = {
     nome: "Matheus",
     idade: 26,
     email: "matheusqueirozds@gmail.com",
@@ -119,10 +119,9 @@ function retornaPessoaAnonimizada(pessoa) {
         nome: "Anônimo".toUpperCase(),
     };
     return pessoaAnonima;
-} */
+}
 
 // EXERCÍCIO 13A
-
 const pessoas = [
     { nome: "Paula", idade: 12, altura: 1.8 },
     { nome: "João", idade: 20, altura: 1.3 },
@@ -139,9 +138,22 @@ function retornaPessoasAutorizadas(pessoas) {
 }
 
 // EXERCÍCIO 13B
-function retornaPessoasNaoAutorizadas(pessoas) {}
+function retornaPessoasNaoAutorizadas(pessoas) {
+    return pessoas.filter((pessoa) => {
+        return pessoa.altura < 1.5 || pessoa.idade <= 14 || pessoa.idade > 60;
+    });
+}
 
 // EXERCÍCIO 14
+const contaDosClientes = [
+    { cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+    { cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+    { cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+    { cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+    { cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+    { cliente: "Soter", saldoTotal: 1200, compras: [] },
+];
+
 function retornaContasComSaldoAtualizado(contas) {}
 
 // EXERCÍCIO 15A
