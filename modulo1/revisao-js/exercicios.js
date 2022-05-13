@@ -3,51 +3,41 @@
 //    -> NÃO MODIFIQUE OS PARÂMETROS DAS FUNÇÕES!!! ()
 
 // EXERCÍCIO 01
-/* const array = [3, 2, 1, 4, 7];
-
 function retornaTamanhoArray(array) {
     return array.length;
-} */
+}
 
 // EXERCÍCIO 02
-/* const array = [8, 23, 16, 10];
-
 function retornaArrayInvertido(array) {
     array.reverse();
 
     return array;
-} */
+}
 
 // EXERCÍCIO 03
-/* const array = [90, 50, 80, 20, 10];
-
 function retornaArrayOrdenado(array) {
     array.sort((a, b) => a - b);
 
     return array;
-} */
+}
 
 // EXERCÍCIO 04
-/* let array = [1, 2, 3, 4, 5, 6];
+function retornaNumerosPares(array) {
+    const numerosPares = array.filter((numero) => numero % 2 === 0);
 
- function retornaNumerosPares(array) {
-    const resultado = array.filter((numero) => numero % 2 === 0);
-    console.log(resultado)
-    return resultado;
-} */
-
-// EXERCÍCIO 05
-function retornaNumerosParesElevadosADois(array) {
-    const numerosPares = array
-        .map((numero, index, array) => numero ** 2)
-        .filter((numero) => numero % 2 === 0);
-    console.log(numerosPares);
     return numerosPares;
 }
 
-// EXERCÍCIO 06
-let array = [1, 5, 3, 7, 5, 2];
+// EXERCÍCIO 05
+function retornaNumerosParesElevadosADois(array) {
+    const numerosParesElevadosADois = array
+        .map((numero, index, array) => numero ** 2)
+        .filter((numero) => numero % 2 === 0);
 
+    return numerosParesElevadosADois;
+}
+
+// EXERCÍCIO 06
 function retornaMaiorNumero(array) {
     let maiorNumero = array[0];
     for (let i = 1; i < array.length; i++) {
@@ -55,11 +45,11 @@ function retornaMaiorNumero(array) {
             maiorNumero = array[i];
         }
     }
+
     return maiorNumero;
 }
 
 // EXERCÍCIO 07
-
 function retornaObjetoEntreDoisNumeros(num1, num2) {
     if (num1 > num2) {
         maiorNumero = num1;
@@ -80,21 +70,61 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 }
 
 // EXERCÍCIO 08
+function retornaNPrimeirosPares(n) {
+    const numerosPares = [];
 
-function retornaNPrimeirosPares(n) {}
+    for (let i = 0; numerosPares.length < n; i++) {
+        if (i % 2 === 0) {
+            numerosPares.push(i);
+        }
+    }
+    return numerosPares;
+}
 
 // EXERCÍCIO 09
-function classificaTriangulo(ladoA, ladoB, ladoC) {}
+function classificaTriangulo(ladoA, ladoB, ladoC) {
+    if (
+        ladoA < ladoB + ladoC &&
+        ladoB < ladoA + ladoC &&
+        ladoC < ladoA + ladoB
+    ) {
+        if (ladoA === ladoB && ladoB === ladoC) {
+            return `Equilátero`;
+        } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+            return `Isósceles`;
+        } else {
+            return `Escaleno`;
+        }
+    }
+
+    return classificaTriangulo;
+}
 
 // EXERCÍCIO 10
-function retornaSegundoMaiorESegundoMenor(array) {}
+function retornaSegundoMaiorESegundoMenor(array) {
+    const maiorNumero = Math.max(...array);
+    array = array.filter((numero) => numero != maiorNumero);
+
+    const menorNumero = Math.min(...array);
+    array = array.filter((numero) => numero != menorNumero);
+
+    const segundoMaior = Math.max(...array);
+    const segundoMenor = Math.min(...array);
+
+    let novoArray = [];
+    novoArray.push(segundoMaior, segundoMenor);
+
+    console.log(novoArray);
+
+    return novoArray;
+}
 
 // EXERCÍCIO 11
 const filme = {
-    nome: "O Diabo Veste Prada",
-    ano: 2006,
-    diretor: "David Frankel",
-    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"],
+    nome: "Homem-aranha",
+    ano: 2002,
+    diretor: "Sam Raimi",
+    atores: ["Tobey Maguire", "Kisten Dunst", "Willem Dafoe", "James Franco"],
 };
 
 function retornaChamadaDeFilme(filme) {
@@ -110,8 +140,6 @@ const pessoa = {
     email: "matheusqueirozds@gmail.com",
     endereco: "Salvador, BA",
 };
-
-pessoa.nome = "Anônimo";
 
 function retornaPessoaAnonimizada(pessoa) {
     const pessoaAnonima = {
@@ -145,7 +173,7 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 }
 
 // EXERCÍCIO 14
-const contaDosClientes = [
+const contas = [
     { cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
     { cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
     { cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
@@ -154,10 +182,31 @@ const contaDosClientes = [
     { cliente: "Soter", saldoTotal: 1200, compras: [] },
 ];
 
-function retornaContasComSaldoAtualizado(contas) {}
+function retornaContasComSaldoAtualizado(contas) {
+    let total = 0;
+    for (let conta of contas) total += conta.saldoTotal;
+    return total;
+}
 
 // EXERCÍCIO 15A
-function retornaArrayOrdenadoAlfabeticamente(consultas) {}
+const consultas = [
+    { nome: "João", dataDaConsulta: "01/10/2021" },
+    { nome: "Pedro", dataDaConsulta: "02/07/2021" },
+    { nome: "Paula", dataDaConsulta: "03/11/2021" },
+    { nome: "Márcia", dataDaConsulta: "04/05/2021" },
+];
+
+function retornaArrayOrdenadoAlfabeticamente(consultas) {
+    consultas.sort(function (a, b) {
+        if (a.nome < b.nome) {
+            return -1;
+        } else {
+            return true;
+        }
+    });
+
+    return consultas;
+}
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {}
