@@ -1,0 +1,20 @@
+1. Ter atenção no enunciado
+Se atentar às informações que foram dadas no problema e caso não entender, reler as mesma até entender, tendo consciência de que meu aprendizado é diferente de outras pessoas e pode ocorrer em velocidades diferentes.
+
+2. Retirar informações relevantes
+Identificar palavras-chave que possam me ajudar na construção do código, extraindo do problema o que ele quer de mim como pessoa desenvolvedora.
+
+3. Pensar entradas e saídas
+Entender quais informações o código está me dando e o que eu consigo fazer com elas, de forma a oferecer uma solução para o problema, representada pelos outputs.
+
+4. Fazer um esquema visual
+Criar um fluxograma para entender os caminhos que meu código irá percorrer, tornando o processo mais claro e intuitivo, facilitando a compreensão da lógica.
+
+5. Criar código feio
+Com base em todas as informações anteriores, contrui o código de fato, com foco na estrutura da lógica.
+
+6. Testar força-bruta
+Validar a funcionalidade do código, verificando se o mesmo está funcionando e resolvendo o problema.
+
+7. Refatorar
+Tornar o código mais legível para outros desenvolvedores, analisando substituições de sintaxes, de forma a reduzir o tamanho do código e melhorar a performance do mesmo.
