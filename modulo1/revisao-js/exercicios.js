@@ -101,20 +101,15 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 }
 
 // EXERCÍCIO 10
+const array = [3, 2, 1, 4, 7, 6, 5];
+
 function retornaSegundoMaiorESegundoMenor(array) {
-    const maiorNumero = Math.max(...array);
-    array = array.filter((numero) => numero != maiorNumero);
+    array.sort((a, b) => a - b);
+    const segundoMenorNumero = array[1];
+    const segundoMaiorNumero = array[array.length - 2];
 
-    const menorNumero = Math.min(...array);
-    array = array.filter((numero) => numero != menorNumero);
-
-    const segundoMaior = Math.max(...array);
-    const segundoMenor = Math.min(...array);
-
-    let novoArray = [];
-    novoArray.push(segundoMaior, segundoMenor);
-
-    console.log(novoArray);
+    const novoArray = [];
+    novoArray.push(segundoMaiorNumero, segundoMenorNumero);
 
     return novoArray;
 }
