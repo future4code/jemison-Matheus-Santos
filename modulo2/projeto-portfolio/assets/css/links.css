@@ -1,0 +1,7 @@
+a {
+    color: var(--color0);
+}
+
+a:hover {
+    color: var(--color4);
+}
