@@ -13,20 +13,19 @@
     <meta content="desenvolver front-end, programador, desenvolvedor web, portfólio, criação de sites profissionais, criação de sites acessíveis, criar site com acessibilidade, criação de sites preço, criação de sites baratos, criação de sites para empresas, a melhor empresa de criação de sites, construir um site, criação de sites do zero, criação de sites desenvolvimento web, hospedagem e criação de sites, criação e manutenção de sites, criação e desenvolvimento de sites, criação e edição de sites, design e criação de site, criação de sites como fazer, fazer site html, programa para criação de sites html, criação de sites google, criação de site html, criação site hotel, como desenvolver um site profissional, crie um site, como desenvolver um site, como desenvolver um site gratuito, criação de sites institucionais, criação de site responsivo, criação de sistema web, desenvolver um site, criador de sites profissional, com criar um site, como funciona para criar um site, como fazer um site com html, como criar um site .org, criação de sites melhor preço, criação de sites médicos, criação de sites mobile first, montar um site profissional, montar um site, criação de site no google, criação de sites online, criação de sites orçamento, criação de sites para pequenas empresas, criação de sites para médicos, software para criação de sites, ferramentas para criação de sites, questionário para criação de sites, criação de sites quanto custa, criação de sites responsivos" name="keywords"><!-- palavras-chave -->
     <meta content="general" name="rating"><!-- censura apropriada da página -->
     <meta content="index, follow" name="robots"><!-- autorizar indexação da página -->
-    <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link href="/assets/css/style.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <nav class="menu" id="menu">
+            <ul class="menu-lista">
+                <li class="menu-item"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="#habilidades">Habilidades</a></li>
+                <li class="menu-item"><a href="#projetos">Projetos</a></li>
+                <li class="menu-item"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -37,11 +36,11 @@
                 <h1>Olá! Eu sou o <strong>Matheus Queiroz</strong></h1>
 
                 <div>
-                    <h2 class="home-box__title home-box__title--designer">UI Designer</h2>
+                    <h2>UI Designer</h2>
                     <p>Construo interfaces digitais em aplicativos web, aplicando conhecimentos focados na <strong>usabilidade</strong> e <strong>experiência do usuário</strong>.</p>
                 </div>
 
-                <img alt="" src="/assets/img/perfil.jpg">
+                <img alt="Foto de Perfil" src="assets/img/perfil.jpg">
 
                 <div>
                     <h2>Programador</h2>
@@ -49,7 +48,7 @@
                 </div>
 
                 <div>
-                    <a href="assets/pdf/curriculo-matheusqueirozds.pdf" target="_blank" rel="noopener noreferrer" download="curriculo-matheusqueirozds.pdf" type="application/pdf">Baixar CV /&gt</a>
+                    <a href=" assets/pdf/curriculo-matheusqueirozds.pdf" target="_blank" rel="noopener noreferrer" download="curriculo-matheusqueirozds.pdf" type="application/pdf">Baixar CV /&gt</a>
                     <a href="#contato">Fale comigo /&gt</a>
                 </div>
             </div>
@@ -116,27 +115,36 @@
 
         <section id="contato">
             <h2>Fale Comigo</h2>
-            <fieldset>
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" placeholder="Peter" required>
+            <div class="campos-de-contato">
+                <fieldset class="campo-duplo">
+                    <div>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Luke" required>
+                    </div>
 
-                <label for="last-name">Sobrenome</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Parker" required>
-            </fieldset>
+                    <div>
+                        <label for="last-name">Sobrenome</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Skywalker" required>
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <label for="email">E-mail</label>
-                <input type="email" name="E-mail" id="email" placeholder="peterparker@email.com" required>
+                <fieldset class="campo-duplo">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="E-mail" id="email" placeholder="peterparker@email.com" required>
+                    </div>
 
-                <label for="tel">WhatsApp</label>
-                <input type="tel" name="tel" id="tel" placeholder="(XX)  9XXXX-XXXX">
-            </fieldset>
+                    <div>
+                        <label for="tel">WhatsApp</label>
+                        <input type="tel" name="tel" id="tel" placeholder="(XX)  9XXXX-XXXX">
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <label for="message">Mensagem</label>
-                <br>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="“E quem disse que isso é problema meu?”"></textarea>
-            </fieldset>
+                <fieldset class="campo-unico">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="“E quem disse que isso é problema meu?”"></textarea>
+                </fieldset>
+            </div>
 
             <button type="submit">Enviar /></button>
         </section>
@@ -158,21 +166,54 @@
     </main>
 
     <footer>
-        <div class="social">
-            <ul class="social-lista">
-                <li class="social-item"><a href="https://github.com/matheusqueirozds" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li class="social-item"><a href="https://linkedin.com/in/matheusqueirozds" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li class="social-item"><a href="https://wa.me/5571981031081" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-                <li class="social-item"><a href="https://instagram.com/oabsorvedor" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            </ul>
+        <div class="footer-conteudo">
+            <a class="footer-link" href="index.html"><img alt="" class="footer--logo" src="/assets/img/logo.svg"></a>
+
+            <div class="footer-contato">
+                <h3 class="footer-titulo">Fale comigo</h3>
+                <ul class="footer-contato-lista">
+
+                    <li class="footer-contato-item">
+                        <a class="footer-contato-link" href="https://github.com/matheusqueirozds" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/github-branco.svg" alt="Ícone do GitHub">
+                        </a>
+                    </li>
+
+                    <li class="footer-contato-item">
+                        <a class="footer-contato-link" href="https://linkedin.com/in/matheusqueirozds" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/linkedin-branco.svg" alt="Ícone do LinkedIn">
+                        </a>
+                    </li>
+
+                    <li class="footer-contato-item">
+                        <a class="footer-contato-link" href="https://wa.me/5571933005739" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/whatsapp-branco.svg" alt="Ícone do WhatsApp">
+                        </a>
+                    </li>
+
+                    <li class="footer-contato-item">
+                        <a class="footer-contato-link" href="https://instagram.com/oabsorvedor" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/instagram-branco.svg" alt="Ícone do Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer-menu">
+                <h3 class="footer-titulo">Informações</h3>
+                <ul class="footer-menu-lista">
+                    <li class="footer-menu-item"><a href="#menu">Home</a></li>
+                    <li class="footer-menu-item"><a href="#sobre">Sobre</a></li>
+                    <li class="footer-menu-item"><a href="#habilidades">Habilidades</a></li>
+                    <li class="footer-menu-item"><a href="#projetos">Projetos</a></li>
+                    <li class="footer-menu-item"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <a class="footer__link" href="index.html"><img alt="" class="footer__logo" src="/assets/img/logo.svg"></a>
-
-        <p class="footer__paragraph">© 2022. Matheus Queiroz | Construído com 💻 e 💡</p>
-
-        <a href="#home">Voltar para o topo</a>
+        <p class="footer-copyright">© 2022. Matheus Queiroz | Construído com 💻 e 💡</p>
     </footer>
+
 </body>
 
 </html>

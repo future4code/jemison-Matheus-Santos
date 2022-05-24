@@ -1,7 +1,8 @@
 a {
-    color: var(--color0);
+    color: var(--color5);
+    transition: all 0.2s;
 }
 
 a:hover {
-    color: var(--color4);
+    color: var(--color6);
 }
