@@ -1,0 +1,75 @@
+/* ===================== MAIN ===================== */
+main {
+    width: 1200px;
+    margin: 40px auto;
+}
+
+/* ===================== INDEX ===================== */
+.galeria-titulo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.galeria-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.galeria-imagem {
+    position: relative;
+    background-color: var(--cinza-claro-2);
+    border-radius: 5px;
+    height: 300px;
+    width: 250px;
+
+    cursor: pointer;
+}
+
+.galeria-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+
+    background-color: var(--cinza-escuro-transparente);
+    color: var(--branco);
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 0 0 5px 5px;
+
+    height: 100px;
+    width: 100%;
+}
+
+.galeria-texto > span {
+    font-size: 0.825rem;
+    margin-top: 20px;
+}
+
+.galeria-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 50px;
+    background: var(--cinza-azulado);
+    color: var(--cinza-escuro);
+    border-radius: 5px;
+
+    margin: 0 auto;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.galeria-pagina:hover {
+    background: var(--cinza-escuro);
+    color: var(--cinza-claro-2);
+}
