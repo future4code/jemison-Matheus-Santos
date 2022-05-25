@@ -1,0 +1,10 @@
+.menu-produto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-produto {
+    display: inline;
+    margin-right: 40px;
+    list-style: none;
+}

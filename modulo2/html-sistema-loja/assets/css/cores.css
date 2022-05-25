@@ -1,0 +1,13 @@
+/* ===================== CORES ===================== */
+:root {
+    --preto: #000000;
+    --cinza-escuro: #45525b;
+    --cinza-escuro-transparente: rgba(69, 82, 91, 0.703);
+    --cinza-azulado: #a8bbc6;
+    --cinza-claro-1: #e9e9e9;
+    --cinza-claro-2: #d9d9d9;
+    --cinza-claro-3: #f7f7f7;
+    --branco: #ffffff;
+    --laranja-vivo: #fe7e02;
+    --laranja-claro: #f9b24e;
+}

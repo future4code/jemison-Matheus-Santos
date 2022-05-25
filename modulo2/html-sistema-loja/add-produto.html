@@ -5,47 +5,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Museu das Referências Ficcionais - Adicionar produto</title>
+    <title>Adicionar produto</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <p>Museu das Referências Ficcionais</p>
+        <nav class="menu">
+            <a href="index.html"><img src="/assets/img/logo.svg" alt="locomarca da labestore" class="logo"></a>
+
+            <ul class="menu-lista">
+                <li class="menu-item "></li><a class="menu-link" href="index.html">Início</a></li>
+                <li class="menu-item"></li><a class="menu-link" href="ctrl-estoque.html">Estoque</a></li>
+                <li class="menu-item"></li><a class="menu-link ativo" href="add-produto.html">Adicionar produto</a></li>
+                <li class="menu-item"></li><a class="menu-link" href="funcionarios.html">Lojistas</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Início</a> |
-        <a href="ctrl-estoque.html">Controle de estoque</a> |
-        <a href="add-produto.html">Adicionar produto</a> |
-        <a href="funcionarios.html">Colaboradores</a>
-    </nav>
+    <main>
+        <h2>Adicionar produto</h2>
 
-    <h2>Adicionar produto</h2>
-    
-    <form action="">
-        <label for="link-foto">Link para foto: </label>
-        <input type="url" id="link-foto" name="link-foto" placeholder="/assets/img/XX.png">
+        <nav class="menu-produto">
+            <ul class="lista-produto">
+                <li class="item-produto">Arquivo</li>
+                <li class="item-produto">Designs</li>
+            </ul>
 
-        <br>
+            <ul class="lista-produto">
+                <li class="item-produto">Desfazer </li>
+                <li class="item-produto">Refazer</li>
+            </ul>
 
-        <label for="descricao">Descrição do produto: </label>
-        <input type="text" id="link-descricao" name="descrição" placeholder="Produto X">
+            <ul class="lista-produto">
+                <li class="item-produto">Prosseguir</li>
+            </ul>
+        </nav>
 
-        <br>
 
-        <label for="preco">Preço (em R$): </label>
-        <input type="number" id="link-numeros" name="preço" placeholder="YY">
+        <form>
+            <fieldset>
+                <div>
+                    <label for="titulo">Título do Produto: </label>
+                    <input type="text" name="titulo" id="titulo">
+                </div>
 
-        <br>
+                <div>
+                    <label for="link-foto">Importar arquivo: </label>
+                    <input type="url" id="link-foto" name="link-foto" placeholder="/assets/img/XX.png">
+                </div>
 
-        <label for="quantidade">Quantidade disponível:</label>
-        <input type="number" id="link-quantidade" name="quantidade" placeholder="YY">
+                <div>
+                    <label for="cor">Cor do Produto: </label>
+                    <input type="text" name="cor" id="cor">
+                </div>
 
-        <br>
+                <div>
+                    <label for="categorias">Categorias do Produto: </label>
+                    <input type="text" name="categorias" id="categorias">
+                </div>
 
-        <button type="submit">Adicionar</button>
+                <div>
+                    <label for="quantidade">Quantidade disponível:</label>
+                    <input type="number" id="link-quantidade" name="quantidade" placeholder="YY">
+                </div>
+            </fieldset>
 
-    </form>
+
+
+
+
+            <fieldset>
+                <div>
+                    <label for="lucro">Margem de lucro: </label>
+                    <input type="text" name="lucro" id="lucro">
+                </div>
+                <div>
+                    <label for="valor-total">Valor total: </label>
+                    <input type="text" name="valor-total" id="valor-total">
+                </div>
+            </fieldset>
+
+
+
+
+
+
+            <button type="submit">Prosseguir</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-informacoes">
+            <div class="menu-inferior">
+                <h3 class="menu-inferior--titulo footer-titulo">Conteúdo</h3>
+
+                <ul class="menu-inferior--lista">
+                    <li class="menu-inferior--item">
+                        <a class="menu-inferior--link" href="/index.html">Início</a>
+                    </li>
+
+                    <li class="menu-inferior--item">
+                        <a class="menu-inferior--link" href="/ctrl-estoque.html">Estoque</a>
+                    </li>
+
+                    <li class="menu-inferior--item">
+                        <a class="menu-inferior--link" href="/add-produto.html">Adicionar Produto</a>
+                    </li>
+
+                    <li class="menu-inferior--item">
+                        <a class="menu-inferior--link" href="/funcionarios.html">Lojistas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contato">
+                <h3 class="contato-titulo footer-titulo">Outros canais da Labenu</h3>
+
+                <ul class="contato-lista">
+                    <li class="contato-item">
+                        <a class="contato-link" href="https://www.facebook.com/Labenu-388131481831991" target="_blank" rel="noopener noreferrer">
+                            <img class="contato-icone" src="/assets/img/redes-sociais/fb.svg" alt="Ícone do Facebook" />
+                        </a>
+                    </li>
+
+                    <li class="contato-item">
+                        <a class="contato-link" href="https://www.instagram.com/labenu_" target="_blank" rel="noopener noreferrer">
+                            <img class="contato-icone" src="/assets/img/redes-sociais/instagram.svg" alt="Ícone do Instagram" />
+                        </a>
+                    </li>
+
+                    <li class="contato-item">
+                        <a class="contato-link" href="https://www.linkedin.com/school/labenu/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                            <img class="contato-icone" src="/assets/img/redes-sociais/linkedin.svg" alt="Ícone do LinkedIn" />
+                        </a>
+                    </li>
+
+                    <li class="contato-item">
+                        <a class="contato-link" href="https://twitter.com/labenu_" target="_blank" rel="noopener noreferrer">
+                            <img class="contato-icone" src="/assets/img/redes-sociais/twitter.svg" alt="Ícone do Twitter" />
+                        </a>
+                    </li>
+
+                    <li class="contato-item">
+                        <a class="contato-link" href="https://www.youtube.com/c/labenu" target="_blank" rel="noopener noreferrer">
+                            <img class="contato-icone" src="/assets/img/redes-sociais/youtube.svg" alt="Ícone do YouTube" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p id="copyright">Labenu | Matheus Queiroz © 2022. Alguns direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

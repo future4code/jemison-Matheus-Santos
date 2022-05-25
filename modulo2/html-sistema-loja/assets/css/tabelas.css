@@ -1,0 +1,20 @@
+/* ===================== TABELAS ===================== */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid var(--cinza-escuro);
+    padding: 20px;
+}
+
+th {
+    background: var(--cinza-claro-1);
+}
+
+td {
+    background: var(--cinza-claro-3);
+}

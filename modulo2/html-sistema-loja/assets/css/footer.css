@@ -1,0 +1,65 @@
+/* ===================== FOOTER ===================== */
+footer {
+    background: var(--cinza-escuro);
+    color: var(--branco);
+    padding: 40px 20px;
+}
+
+.footer-informacoes {
+    max-width: 1200px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-titulo {
+    font-size: 1.25rem;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-lista {
+    display: flex;
+}
+
+.contato-item {
+    list-style: none;
+    padding: 10px;
+}
+
+.contato-link {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.contato-link:hover {
+    opacity: 0.7;
+}
+
+.menu-inferior--item {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.menu-inferior--link {
+    color: var(--branco);
+    text-decoration: none;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.menu-inferior--link:hover {
+    opacity: 0.7;
+}
+
+#copyright {
+    margin-top: 40px;
+    text-align: center;
+}
