@@ -1,6 +1,7 @@
 a {
     color: var(--color5);
     transition: all 0.2s;
+    padding: 5px;
 }
 
 a:hover {

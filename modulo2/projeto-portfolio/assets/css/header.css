@@ -1,17 +1,37 @@
-.menu-lista {
+header {
+    background: var(--color0);
+}
+
+.header {
     display: flex;
     align-items: center;
-    justify-content: right;
-    gap: 20px;
+    justify-content: space-between;
     flex-wrap: wrap;
-
-    background: #000;
+    gap: 20px;
     padding: 20px;
 }
 
+.menu-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 /*=============== RESPONSIVIDADE ===============*/
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+    }
+
+    header,
     .menu-lista {
         justify-content: center;
+        gap: 10px;
+    }
+
+    .menu-item {
+        background: #222;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
 }

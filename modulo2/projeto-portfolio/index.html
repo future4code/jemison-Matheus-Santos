@@ -19,53 +19,63 @@
 
 <body>
     <header>
-        <nav class="menu" id="menu">
-            <ul class="menu-lista">
-                <li class="menu-item"><a href="#home">Home</a></li>
-                <li class="menu-item"><a href="#sobre">Sobre</a></li>
-                <li class="menu-item"><a href="#habilidades">Habilidades</a></li>
-                <li class="menu-item"><a href="#projetos">Projetos</a></li>
-                <li class="menu-item"><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class=" header container">
+            <a class="header-link" href="index.html"><img alt="" class="header--logo" src="/assets/img/logo.svg"></a>
+            <nav class="menu" id="menu">
+                <ul class="menu-lista">
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                    <li class="menu-item"><a href="#habilidades">Habilidades</a></li>
+                    <li class="menu-item"><a href="#projetos">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <div>
-                <h1>Olá! Eu sou o <strong>Matheus Queiroz</strong></h1>
+    <main id="introducao">
+        <div>
+            <h1 class="introducao-titulo container">Olá! Eu sou o <strong>Matheus Queiroz</strong></h1>
 
-                <div>
-                    <h2>UI Designer</h2>
-                    <p>Construo interfaces digitais em aplicativos web, aplicando conhecimentos focados na <strong>usabilidade</strong> e <strong>experiência do usuário</strong>.</p>
-                </div>
+            <p class="introducao-texto container">Desenvolvedor Frontend e UI Designer.</p>
+        </div>
 
-                <img alt="Foto de Perfil" src="assets/img/perfil.jpg">
-
-                <div>
-                    <h2>Programador</h2>
-                    <p>Desenvolvo experiências de navegação através de projetos únicos, utilizando <strong>boas práticas</strong> com foco em <strong>performance</strong></p>
-                </div>
-
-                <div>
-                    <a href=" assets/pdf/curriculo-matheusqueirozds.pdf" target="_blank" rel="noopener noreferrer" download="curriculo-matheusqueirozds.pdf" type="application/pdf">Baixar CV /&gt</a>
-                    <a href="#contato">Fale comigo /&gt</a>
-                </div>
+        <div class="informacoes container">
+            <div class="informacao">
+                <h2>Dev Frontend</h2>
+                <p>Desenvolvo experiências de navegação através de projetos únicos, utilizando <strong>boas práticas</strong> com foco em <strong>performance</strong>.</p>
             </div>
-        </section>
 
-        <section id="sobre">
-            <h2>Sobre</h2>
+            <img alt="Foto de Perfil" src="assets/img/perfil.jpg">
 
-            <p>Soteropolitano, iniciei minha trajetória na programação desenvolvendo interfaces web, além de aplicar conhecimentos de UI Design.</p>
-            <p>Atualmente trabalho como Desenvolvedor Web Front-End. Gosto de codificar coisas para a web e de dar vida a novas ideias. Sou apaixonado pelo que faço e estou sempre aberto a trabalhar em equipe, a aprender novas habilidades, frameworks ou tecnologias.</p>
-            <p>Gosto de ler, desenhar e assistir filmes e séries de ficção cientifica ou suspense.</p>
-        </section>
+            <div class="informacao">
+                <h2>UI Designer</h2>
+                <p>Construo interfaces digitais em aplicativos web, aplicando conhecimentos em <strong>usabilidade</strong> e <strong>experiência do usuário</strong>.</p>
+            </div>
+        </div>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
+        <div class="botoes">
+            <a href=" assets/pdf/curriculo-matheusqueirozds.pdf" target="_blank" rel="noopener noreferrer" download="curriculo-matheusqueirozds.pdf" type="application/pdf">Baixar CV /&gt</a>
+            <a href="#contato">Fale comigo /&gt</a>
+        </div>
+    </main>
 
-            <article>
+    <section id="sobre">
+        <div class="container">
+            <h2 class="container-titulo">Sobre</h2>
+            <div class="container-conteudo">
+                <p>Soteropolitano, iniciei minha trajetória na programação desenvolvendo projetos pessoais em HTML e CSS, além de aplicar conhecimentos de UI Design.</p>
+                <p>Atualmente trabalho como Desenvolvedor Web Front-End. Gosto de codificar coisas para a web e de dar vida a novas ideias. Sou apaixonado pelo que faço e estou sempre aberto a trabalhar em equipe, a aprender novas habilidades, frameworks ou tecnologias.</p>
+                <p>Gosto de ler, desenhar e assistir filmes e séries de ficção cientifica ou suspense.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <h2 class="container-titulo">Habilidades</h2>
+
+            <article class="container-texto">
                 <h3>Hard Skills</h3>
                 <ul>
                     <li>HTML</li>
@@ -80,7 +90,7 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="container-texto">
                 <h3>Soft Skills</h3>
                 <ul>
                     <li>Adaptabilidade</li>
@@ -94,63 +104,65 @@
                     <li>Resolução de problemas</li>
                 </ul>
             </article>
-        </section>
+        </div>
+    </section>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <article>
+    <section id="projetos">
+        <div class="container">
+            <h2 class="container-titulo">Projetos</h2>
+
+            <article class="container-texto">
                 <p>Em breve</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eveniet, id necessitatibus dolore nam debitis magni temporibus cumque</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button>Ver detalhes /></button>
             </article>
-        </section>
+        </div>
+    </section>
 
-        <section id="feedbacks">
-            <h2>Feedbacks</h2>
-
+    <section id="feedbacks">
+        <div class="container">
+            <h2 class="container-titulo">Feedbacks</h2>
             <p>Miguel Basílio - Coordenador de Growth</p>
             <p>O empenho em antecipar e resolver problemas que o Matheus possui, levou a satisfação dos clientes e usuários da plataforma para outro nível. Possui uma entrega de resultados acima da média e por muitas vezes superando a expectativa. Um excelente profissional para ter na equipe.</p>
-        </section>
+        </div>
+    </section>
 
-        <section id="contato">
-            <h2>Fale Comigo</h2>
-            <div class="campos-de-contato">
-                <fieldset class="campo-duplo">
-                    <div>
-                        <label for="name">Nome</label>
-                        <input type="text" name="name" id="name" placeholder="Luke" required>
-                    </div>
+    <!--  <section id="contato">
 
-                    <div>
-                        <label for="last-name">Sobrenome</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Skywalker" required>
-                    </div>
-                </fieldset>
+                <h2>Fale Comigo</h2>
+                <div class="campos-de-contato">
+                    <fieldset class="campo-duplo">
+                        <div>
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Luke" required>
+                        </div>
+                        <div>
+                            <label for="last-name">Sobrenome</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Skywalker" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="campo-duplo">
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="E-mail" id="email" placeholder="peterparker@email.com" required>
+                        </div>
+                        <div>
+                            <label for="tel">WhatsApp</label>
+                            <input type="tel" name="tel" id="tel" placeholder="(XX)  9XXXX-XXXX">
+                        </div>
+                    </fieldset>
+                    <fieldset class="campo-unico">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="“E quem disse que isso é problema meu?”"></textarea>
+                    </fieldset>
+                </div>
+                <button type="submit">Enviar /></button>
+            </section> -->
 
-                <fieldset class="campo-duplo">
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="E-mail" id="email" placeholder="peterparker@email.com" required>
-                    </div>
-
-                    <div>
-                        <label for="tel">WhatsApp</label>
-                        <input type="tel" name="tel" id="tel" placeholder="(XX)  9XXXX-XXXX">
-                    </div>
-                </fieldset>
-
-                <fieldset class="campo-unico">
-                    <label for="message">Mensagem</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="“E quem disse que isso é problema meu?”"></textarea>
-                </fieldset>
-            </div>
-
-            <button type="submit">Enviar /></button>
-        </section>
-
-        <section id="certificacoes">
-            <h2>Certificações</h2>
+    <section id="certificacoes">
+        <div class="container">
+            <h2 class="container-titulo">Certificações</h2>
             <article>
                 <h3>Curso em Vídeo</h3>
                 <p>4 cursos realizados</p>
@@ -162,56 +174,58 @@
                 <p>1 Bootcamp em andamento</p>
                 <p>Clique aqui para conferir</p>
             </article>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer-conteudo">
-            <a class="footer-link" href="index.html"><img alt="" class="footer--logo" src="/assets/img/logo.svg"></a>
+        <div class="footer container">
+            <div class="conteudo">
+                <img class="logo" alt="logo da página" src="/assets/img/logo.svg">
 
-            <div class="footer-contato">
-                <h3 class="footer-titulo">Fale comigo</h3>
-                <ul class="footer-contato-lista">
-
-                    <li class="footer-contato-item">
-                        <a class="footer-contato-link" href="https://github.com/matheusqueirozds" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/github-branco.svg" alt="Ícone do GitHub">
+                <div class="contato">
+                    <h3 class="titulo">Fale comigo</h3>
+                    <div class="redes">
+                        <a href="https://github.com/matheusqueirozds" target="_blank" rel="noopener noreferrer">
+                            <img class="icones" src="assets/img/github-branco.svg" alt="Ícone do GitHub">
                         </a>
-                    </li>
-
-                    <li class="footer-contato-item">
-                        <a class="footer-contato-link" href="https://linkedin.com/in/matheusqueirozds" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/linkedin-branco.svg" alt="Ícone do LinkedIn">
+                        <a href="https://linkedin.com/in/matheusqueirozds" target="_blank" rel="noopener noreferrer">
+                            <img class="icones" src="assets/img/linkedin-branco.svg" alt="Ícone do LinkedIn">
                         </a>
-                    </li>
-
-                    <li class="footer-contato-item">
-                        <a class="footer-contato-link" href="https://wa.me/5571933005739" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/whatsapp-branco.svg" alt="Ícone do WhatsApp">
+                        <a href="https://wa.me/5571933005739" target="_blank" rel="noopener noreferrer">
+                            <img class="icones" src="assets/img/whatsapp-branco.svg" alt="Ícone do WhatsApp">
                         </a>
-                    </li>
-
-                    <li class="footer-contato-item">
-                        <a class="footer-contato-link" href="https://instagram.com/oabsorvedor" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/instagram-branco.svg" alt="Ícone do Instagram">
+                        <a href="https://instagram.com/oabsorvedor" target="_blank" rel="noopener noreferrer">
+                            <img class="icones" src="assets/img/instagram-branco.svg" alt="Ícone do Instagram">
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+
+                <div class="informacoes">
+                    <h3 class="titulo">Informações</h3>
+                    <nav>
+                        <ul class="informacoes-lista">
+                            <li class="informacoes-item">
+                                <a class="informacoes-link" href="index.html">Home</a>
+                            </li>
+                            <li class="informacoes-item">
+                                <a class="informacoes-link" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="informacoes-item">
+                                <a class="informacoes-link" href="#habilidades">Habilidades</a>
+                            </li>
+                            <li class="informacoes-item">
+                                <a class="informacoes-link" href="#projetos">Projetos</a>
+                            </li>
+                            <li class="informacoes-item">
+                                <a class="informacoes-link" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
-            <nav class="footer-menu">
-                <h3 class="footer-titulo">Informações</h3>
-                <ul class="footer-menu-lista">
-                    <li class="footer-menu-item"><a href="#menu">Home</a></li>
-                    <li class="footer-menu-item"><a href="#sobre">Sobre</a></li>
-                    <li class="footer-menu-item"><a href="#habilidades">Habilidades</a></li>
-                    <li class="footer-menu-item"><a href="#projetos">Projetos</a></li>
-                    <li class="footer-menu-item"><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+            <p class="copy">© 2022. Matheus Queiroz | Construído com 💻 e 💡</p>
         </div>
-
-        <p class="footer-copyright">© 2022. Matheus Queiroz | Construído com 💻 e 💡</p>
     </footer>
 
 </body>

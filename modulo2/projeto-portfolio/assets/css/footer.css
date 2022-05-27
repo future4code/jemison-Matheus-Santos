@@ -1,57 +1,83 @@
 footer {
     background: #000;
-    padding: 30px 20px;
+    width: 100%;
 }
 
-.footer-conteudo {
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.footer > .conteudo {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
     color: var(--color5);
 }
 
-.footer-titulo {
+footer .titulo {
     margin-bottom: 20px;
     color: var(--color10);
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.footer-contato-lista {
+/* =================== FOOTER CONTATO ================== */
+footer .redes {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 }
 
-.footer-contato-link img {
+footer .icones {
     width: 30px;
     opacity: 1;
     transition: 0.3s;
 }
 
-.footer-contato-link img:hover {
+footer .icones:hover {
     opacity: 0.7;
 }
 
-.footer-copyright {
+/* =================== FOOTER INFORMAÇÕES ================== */
+footer .informacoes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* =================== FOOTER COPY ================== */
+footer .copy {
     color: var(--color10);
-    margin-top: 20px;
     text-align: center;
+    grid-column: 1/-1;
 }
 
 /*=============== RESPONSIVIDADE ===============*/
-@media (max-width: 500px) {
-    .footer-conteudo {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 40px;
+@media (max-width: 600px) {
+    footer .logo {
+        display: none;
     }
 
-    .footer-titulo {
+    footer .titulo {
         margin-bottom: 10px;
+    }
+
+    footer .redes {
+        gap: 5px;
+    }
+
+    footer .redes > a {
+        padding: 2.5px;
+    }
+}
+
+@media (max-width: 370px) {
+    .footer > .conteudo {
     }
 }
