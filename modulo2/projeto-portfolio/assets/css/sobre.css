@@ -1,0 +1,27 @@
+.container-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container-conteudo > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 700px;
+}
+
+.container-conteudo img {
+    max-height: 250px;
+}
+
+@media (max-width: 600px) {
+    .container-conteudo {
+        flex-wrap: wrap;
+    }
+
+    .container-conteudo > div {
+        text-align: justify;
+    }
+}
