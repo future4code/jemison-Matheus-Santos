@@ -1,28 +1,12 @@
 # Projeto de Fixação - Portfólio
 
-Portfólio criado com o intuito de mostrar para o meu visitante quais experiências prévias eu tive, e ser um espaço onde as pessoas poderão me encontrar. Nesse projeto mostrarei minhas habilidades que você adquiridas em HTML e CSS. Assim que possível, disponibilizarei [aqui]() o link para acessar o site do projeto finalizado.
+Portfólio criado com o intuito de mostrar para o meu visitante quais experiências prévias eu tive, e ser um espaço onde as pessoas poderão me encontrar. Nesse projeto mostrarei minhas habilidades que você adquiridas em HTML e CSS. Assim que possível, disponibilizarei [aqui](gray-eggs.surge.sh) o link para acessar o site do projeto finalizado.
 
 #
 
 ## Imagens do projeto
 
-#
-
-## Documentação de cores
-
-| Cor           | Hexadecimal |
-| ------------- | ----------- |
-| Preto         | `#000000`   |
-| Azul escuro 2 | `#262837`   |
-| Azul escuro 1 | `#353648`   |
-| Cinza escuro  | `#444557`   |
-| Cinza médio   | `#cccccc`   |
-| Cinza claro   | `#e9e9e9`   |
-| Azul bebê 2   | `#21bde9`   |
-| Azul bebê 1   | `#66daff`   |
-| Azul-claro    | `#def7ff`   |
-| Amarelo       | `#ffd166`   |
-| Branco        | `#ffffff`   |
+![image](https://user-images.githubusercontent.com/70871620/170805577-e07acc80-38c7-408f-9fce-aacd00bdf2b4.png)
 
 #
 
@@ -68,7 +52,7 @@ HTML e CSS
 
 ### Link Surge
 
-A PARTIR DA SEMANA 5, INSIRA AQUI O LINK DO SURGE. **ANTES DISSO, APAGUE ESSAS DUAS LINHAS.**
+[Clique aqui](gray-eggs.surge.sh) para acessar o projeto online!
 
 #
 
