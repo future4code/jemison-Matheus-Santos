@@ -1,5 +1,11 @@
 #habilidades {
     margin: 40px auto;
+    background: #141414;
+    padding: 40px 0;
+}
+
+#habilidades .container-titulo {
+    color: #eee;
 }
 
 .habilidades {
@@ -12,6 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    color: #eee;
 
     gap: 40px;
 }
@@ -36,8 +44,8 @@
     align-items: center;
     position: relative;
 
-    background: #e9e9e9;
-    color: #000;
+    background: #232323;
+    color: #eee;
     padding: 30px;
     border-radius: 10px;
 
@@ -101,6 +109,10 @@
 }
 
 @media (max-width: 670px) {
+    .container-titulo {
+        margin-bottom: 10px;
+    }
+
     .habilidades {
         gap: 40px;
     }

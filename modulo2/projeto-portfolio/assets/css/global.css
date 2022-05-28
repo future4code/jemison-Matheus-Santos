@@ -64,9 +64,13 @@ p {
 }
 
 .container-titulo {
+    display: flex;
+    justify-content: center;
     font-weight: 600;
     margin-left: 10px;
     text-transform: uppercase;
+
+    margin-bottom: 40px;
 }
 
 .container-titulo::before {
@@ -78,11 +82,11 @@ p {
     background: #21bde9;
     border-radius: 2px 0 0 2px;
 
-    top: 27px;
-    left: -10px;
+    top: 8px;
+    left: -5px;
 
     height: 20px;
-    width: 5px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar {
@@ -97,5 +101,3 @@ p {
 ::-webkit-scrollbar-track {
     background: var(--color10);
 }
-
-
