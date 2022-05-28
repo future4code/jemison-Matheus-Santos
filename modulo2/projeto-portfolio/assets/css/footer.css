@@ -51,6 +51,10 @@ footer .informacoes {
     flex-wrap: wrap;
 }
 
+footer .informacoes-lista {
+    margin-top: -20px;
+}
+
 /* =================== FOOTER COPY ================== */
 footer .copy {
     color: var(--color10);
