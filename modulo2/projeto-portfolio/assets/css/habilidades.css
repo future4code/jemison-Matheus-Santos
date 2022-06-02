@@ -1,0 +1,153 @@
+#habilidades {
+    margin: 40px auto;
+    background: #141414;
+    padding: 40px 0;
+}
+
+#habilidades .container-titulo {
+    color: #eee;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.habilidades > .container-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    color: #eee;
+
+    gap: 40px;
+}
+
+.habilidades > .container-texto > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+}
+
+.habilidades-lista {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.habilidades-lista li {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    background: #232323;
+    color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+
+    height: 120px;
+    width: 200px;
+    cursor: pointer;
+
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.habilidades-lista li:hover {
+    border-radius: 0 5px 5px 0;
+
+    opacity: 1;
+}
+
+.habilidades-lista li::before {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -5px;
+    content: "";
+
+    background: #21bde9;
+    border-radius: 5px 0 0 5px;
+    height: 20px;
+    width: 5px;
+
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.habilidades-lista li:hover::before {
+    opacity: 1;
+    top: 0;
+    height: 100%;
+}
+
+.soft-skills {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 925px) {
+    .container-titulo {
+        margin-bottom: 20px;
+    }
+
+    .habilidades {
+        gap: 60px;
+    }
+
+    .habilidades > .container-texto {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .habilidades > .container-texto img {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .container-titulo {
+        margin-bottom: 10px;
+    }
+
+    .habilidades {
+        gap: 40px;
+    }
+
+    .habilidades > .container-texto {
+        gap: 20px;
+    }
+
+    .habilidades-lista {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .habilidades-lista li {
+        padding: 15px;
+        height: 60px;
+        width: 250px;
+    }
+
+    .habilidades-lista li::before {
+        top: 15px;
+        height: 18px;
+        width: 4px;
+        left: -4px;
+    }
+}
+
+@media (max-width: 530px) {
+    .habilidades-lista li {
+        font-size: 0.725rem;
+        width: 150px;
+    }
+
+    .habilidades-lista li::before {
+        height: 15px;
+        width: 3px;
+        left: -3px;
+    }
+}

@@ -1,0 +1,87 @@
+footer {
+    background: #000;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.footer > .conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    color: var(--color5);
+}
+
+footer .titulo {
+    margin-bottom: 20px;
+    color: var(--color10);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* =================== FOOTER CONTATO ================== */
+footer .redes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer .icones {
+    width: 30px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+footer .icones:hover {
+    opacity: 0.7;
+}
+
+/* =================== FOOTER INFORMAÇÕES ================== */
+footer .informacoes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer .informacoes-lista {
+    margin-top: -20px;
+}
+
+/* =================== FOOTER COPY ================== */
+footer .copy {
+    color: var(--color10);
+    text-align: center;
+    grid-column: 1/-1;
+}
+
+/*=============== RESPONSIVIDADE ===============*/
+@media (max-width: 600px) {
+    footer .logo {
+        display: none;
+    }
+
+    footer .titulo {
+        margin-bottom: 10px;
+    }
+
+    footer .redes {
+        gap: 5px;
+    }
+
+    footer .redes > a {
+        padding: 2.5px;
+    }
+}
+
+@media (max-width: 370px) {
+    .footer > .conteudo {
+    }
+}
