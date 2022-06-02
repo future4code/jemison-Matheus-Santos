@@ -1,0 +1,39 @@
+button,
+.botoes > a {
+    cursor: url(/assets/img/cursor-pointer.svg), pointer;
+    border: none;
+    outline: none;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botoes .botao-1,
+.botoes .botao-2 {
+    padding: 15px 20px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 0.3s;
+    border: 3px solid #000;
+    font-weight: 500;
+}
+
+.botao-1 {
+    color: #000;
+}
+
+.botao-2 {
+    color: #fff;
+    background: #000;
+}
+
+.botao-1:hover,
+.botao-2:hover {
+    color: #eee;
+    border-color: #000;
+    background: #000;
+    opacity: 0.8;
+}

@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* user-select: none; */
+}
+
+body {
+    background: var(--color10);
+    color: var(--color0);
+
+    font-family: var(--font1);
+    line-height: 1.5;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    overflow-wrap: break-word;
+}
+
+html {
+    cursor: url("/assets/img/#"), default;
+    scroll-behavior: smooth;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: url(/assets/img/cursor-pointer.svg), pointer;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.container-titulo {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-left: 10px;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+}
+
+.container-titulo::before {
+    position: relative;
+
+    display: block;
+    content: "";
+
+    background: #21bde9;
+    border-radius: 2px 0 0 2px;
+
+    top: 8px;
+    left: -5px;
+
+    height: 20px;
+    width: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color10);
+}
