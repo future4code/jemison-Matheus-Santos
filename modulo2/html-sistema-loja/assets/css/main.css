@@ -27,6 +27,13 @@ main {
     width: 250px;
 
     cursor: pointer;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.galeria-imagem:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .galeria-texto {
