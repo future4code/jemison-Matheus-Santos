@@ -8,7 +8,7 @@
 .informacoes-container img {
     position: relative;
     top: 68px;
-    max-width: 152px;
+    width: 152px;
     border-radius: 50%;
     border: 3px solid #cc1016;
     margin: 20px;

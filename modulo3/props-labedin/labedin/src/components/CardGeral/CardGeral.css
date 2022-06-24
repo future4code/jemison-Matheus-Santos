@@ -1,9 +1,8 @@
-.card-container {
-    margin-bottom: 10px;
+.experiencia-container {
     height: 200px;
 }
 
-.card-container h2 {
+.experiencia-container h2 {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 500;
@@ -11,16 +10,28 @@
 
 .bigcard-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .bigcard-container > img {
-    width: 70px;
-    border-radius: 50%;
+    width: 48px;
+    cursor: pointer;
 }
 
 .bigcard-container h4 {
-    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.bigcard-container p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.bigcard-container span {
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 12px;
 }
 
 .bigcard-container > div {

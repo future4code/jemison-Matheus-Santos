@@ -1,6 +1,6 @@
 .sobre-container {
     background: #ffffff;
-    padding: 20px;
+    padding: 24px;
     border-radius: 10px;
     border: 1px solid rgb(222, 222, 222);
 }
@@ -27,6 +27,7 @@
     width: 120px;
     opacity: 0.5;
     cursor: pointer;
+    text-align: right;
 }
 
 #mais:hover {
