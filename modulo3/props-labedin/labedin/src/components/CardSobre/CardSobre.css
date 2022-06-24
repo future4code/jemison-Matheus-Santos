@@ -1,0 +1,35 @@
+.sobre-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.sobre-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sobre-container > div {
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 20px;
+}
+
+#mais {
+    display: inline;
+    height: 100%;
+    width: 120px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#mais:hover {
+    color: #0a66c2;
+    opacity: 1;
+}

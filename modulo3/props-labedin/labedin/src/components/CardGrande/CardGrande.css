@@ -1,0 +1,34 @@
+.card-container {
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.card-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bigcard-container {
+    display: flex;
+    align-items: center;
+}
+
+.bigcard-container > img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.bigcard-container h4 {
+    margin-bottom: 15px;
+}
+
+.bigcard-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+
+.bigcard-container .margin-left {
+    margin-left: -25px;
+}
