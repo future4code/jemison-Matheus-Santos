@@ -1,0 +1,46 @@
+.informacoes-bg {
+    background-image: url(https://media-exp1.licdn.com/dms/image/C4E16AQG1UGCUPwI1UQ/profile-displaybackgroundimage-shrink_350_1400/0/1655728560897?e=1661385600&v=beta&t=TvhuNyS6eDCuNBYPV3sfAYMyj78__0V1gLS-AL-59LY);
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.informacoes-container img {
+    position: relative;
+    top: 68px;
+    width: 152px;
+    border-radius: 50%;
+    border: 3px solid #cc1016;
+    margin: 20px;
+}
+
+.informacoes-container h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.informacoes-container p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.informacoes-container span {
+    color: #0a66c2;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.informacoes-container span:hover {
+    text-decoration: underline;
+}
+
+.quebra {
+    display: flex;
+    gap: 15px;
+}
+
+#informacoes-intro {
+    border-radius: 0 0 10px 10px;
+    padding-top: 63px;
+}

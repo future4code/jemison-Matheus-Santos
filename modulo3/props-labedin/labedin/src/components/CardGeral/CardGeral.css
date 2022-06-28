@@ -1,0 +1,45 @@
+.experiencia-container {
+    height: 200px;
+}
+
+.experiencia-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bigcard-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.bigcard-container > img {
+    width: 48px;
+    cursor: pointer;
+}
+
+.bigcard-container h4 {
+    font-weight: 500;
+}
+
+.bigcard-container p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.bigcard-container span {
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 12px;
+}
+
+.bigcard-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+
+.bigcard-container .margin-left {
+    margin-left: -25px;
+}

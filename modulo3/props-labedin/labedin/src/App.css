@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    background: #f3f2ef;
+    padding: 40px 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.page-section-container {
+    width: 782px;
+    margin: 10px 0;
+}
+
+.page-section-container > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    display: flex;
+    font-size: 20px;
+}
