@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffa500;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+div > img {
+    width: 48px;
+}
