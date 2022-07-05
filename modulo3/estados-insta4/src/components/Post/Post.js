@@ -114,7 +114,7 @@ function Post(props) {
                         valorContador={numeroComentarios}
                     />
                 </PostFooter>
-                {componenteComentario}
+                {componenteComentario} 
             </PostContainer>
 
             <PostContainer>
