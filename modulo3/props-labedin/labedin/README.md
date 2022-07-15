@@ -2,28 +2,28 @@
 
 Clone do LinkedIn utilizando conceitos básicos do React, como Componentes funcionais e props.
 
+## Link do surge
+
+https://courageous-knee.surge.sh/
 
 ## Imagens do projeto
-![image](https://user-images.githubusercontent.com/70871620/178864482-2608a021-e547-4cf7-a79c-929baf23ad38.png)
 
+![image](https://user-images.githubusercontent.com/70871620/179098904-9bda835b-a4a1-4543-9e52-751f3659fab7.png)
 
 ## Referência
 
- - [Meu LinkedIn](https://www.linkedin.com/in/matheusqueirozds/)
-
+-   [Meu LinkedIn](https://www.linkedin.com/in/matheusqueirozds/)
 
 ## Funcionalidades
 
-- Detalhes seguidos à risca.
-
+-   Detalhes seguidos à risca.
 
 ## Aprendizados
 
-- Como passar props de um Componente Pai para um Componente Filho
-- Como ler props
-- Como criar um Componente
-- Como invocar um Componente Filho em um Componente Pai
-
+-   Como passar props de um Componente Pai para um Componente Filho
+-   Como ler props
+-   Como criar um Componente
+-   Como invocar um Componente Filho em um Componente Pai
 
 ## Autores
 
@@ -40,10 +40,10 @@ Clone do LinkedIn utilizando conceitos básicos do React, como Componentes funci
   </tr>
 </table>
 
-
 ## Stacks utilizadas
 
 ### Frontend
+
  <ul>
    <li>✅ React</li>
- </ul> 
+ </ul>

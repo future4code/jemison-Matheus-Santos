@@ -1,0 +1,15 @@
+.mock-bg {
+    border: 1px solid #000;
+}
+
+.mock-texto {
+    padding: 20px;
+}
+
+.mock-texto > p {
+    margin-bottom: 10px;
+}
+
+.botao {
+    cursor: pointer;
+}
