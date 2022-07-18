@@ -1,0 +1,13 @@
+.sobre-card > p {
+    margin-bottom: 20px;
+}
+
+.sobre-card .flex-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-card .mais.cor-5:hover {
+    color: var(--cor8);
+    cursor: pointer;
+}

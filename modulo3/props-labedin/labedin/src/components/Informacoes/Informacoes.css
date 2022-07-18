@@ -1,0 +1,81 @@
+.card-informacoes {
+    display: flex;
+    flex-direction: column;
+    background: url("https://media-exp1.licdn.com/dms/image/C4E16AQG1UGCUPwI1UQ/profile-displaybackgroundimage-shrink_350_1400/0/1655728560897?e=1663200000&v=beta&t=ezpr7i4BxHdJ3eMZlVf4lbbunOTxLDaEhs-b98WQtfo")
+        no-repeat;
+    background-size: contain;
+    padding: 24px 24px 0 24px;
+    border-radius: 10px;
+}
+
+.flex1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.flex1 img:first-child {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 64px;
+    margin-bottom: 11px;
+}
+
+.flex1 .bg-0 {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.flex1 .bg-0:hover {
+    background-color: var(--cor1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.grid p {
+    margin-bottom: 3px;
+}
+
+.instituicao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.instituicao img {
+    width: 32px;
+}
+
+.instituicao a:hover {
+    color: var(--cor8);
+}
+
+.flex2 p {
+    margin-bottom: 10px;
+}
+
+.flex2,
+.numeros {
+    display: flex;
+    gap: 4px;
+}
+
+.flex2 a::before,
+.numeros a + a::before {
+    display: inline-block;
+    content: "·";
+    width: 8px;
+    color: var(--cor3);
+}
+
+.numeros {
+    margin-bottom: 12px;
+}
