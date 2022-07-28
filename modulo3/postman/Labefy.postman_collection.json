@@ -1,0 +1,236 @@
+{
+    "info": {
+        "_postman_id": "fa87bf10-f5e0-4225-aa8b-3f6e090f13f5",
+        "name": "Labefy",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "22362887"
+    },
+    "item": [
+        {
+            "name": "getAllPlaylists",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "matheus-queiroz-jemison",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-labenu-apis",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": ["labefy", "playlists"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "createPlaylist",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "matheus-queiroz-jemison",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"name\": \"wine & friends\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-labenu-apis",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": ["labefy", "playlists"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "searchPlaylist",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "matheus-queiroz-jemison",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=Lazy",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-labenu-apis",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": ["labefy", "playlists", "search"],
+                    "query": [
+                        {
+                            "key": "name",
+                            "value": "Lazy"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "addTrackToPlaylist",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "matheus-queiroz-jemison",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"name\": \"Let There Be Love\", \r\n    \"artist\": \"Nat King Cole\",\r\n    \"url\": \"https://open.spotify.com/track/2YsxdgfdysICWS4Mrn25hd?si=b444649a4f6d4231\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-labenu-apis",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": ["labefy", "playlists", ":playlistId", "tracks"],
+                    "variable": [
+                        {
+                            "key": "playlistId",
+                            "value": "8a411788-9931-4654-a238-f62a74f962fb"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "getPlaylistTracks",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "matheus-queiroz-jemison",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-labenu-apis",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": ["labefy", "playlists", ":playlistId", "tracks"],
+                    "variable": [
+                        {
+                            "key": "playlistId",
+                            "value": "8a411788-9931-4654-a238-f62a74f962fb"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "removeTrackFromPlaylist",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "matheus-queiroz-jemison",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-labenu-apis",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": [
+                        "labefy",
+                        "playlists",
+                        ":playlistId",
+                        "tracks",
+                        ":trackId"
+                    ],
+                    "variable": [
+                        {
+                            "key": "playlistId",
+                            "value": "515a5d45-d850-42be-bd2f-3b99d0509461"
+                        },
+                        {
+                            "key": "trackId",
+                            "value": "0918110d-4c3d-491f-92f2-3de10f0099cf"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "deletePlaylist",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "matheus-queiroz-jemison",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId\n",
+                    "protocol": "https",
+                    "host": [
+                        "us-central1-labenu-apis",
+                        "cloudfunctions",
+                        "net"
+                    ],
+                    "path": ["labefy", "playlists", ":playlistId\n"],
+                    "variable": [
+                        {
+                            "key": "playlistId\n",
+                            "value": "0b93ea24-8b91-4f66-8a89-2102196246b5"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
