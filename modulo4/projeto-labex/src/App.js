@@ -6,6 +6,7 @@ function App() {
     return (
         <div>
             <GlobalStyle />
+            <GlobalStyle />
             <Router />
         </div>
     );
