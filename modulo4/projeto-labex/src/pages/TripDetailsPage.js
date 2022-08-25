@@ -2,7 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Botoes } from "../StyledApp";
-import TripDetail from "../hook/TripDetail";
+import TripDetail from "../hooks/TripDetail";
 
 export default function TripDetailsPage(props) {
     const navigate = useNavigate();

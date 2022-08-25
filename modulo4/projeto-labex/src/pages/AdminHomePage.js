@@ -3,7 +3,7 @@
 import React from "react";
 import { Botoes } from "../StyledApp";
 import { useNavigate } from "react-router-dom";
-import Trips from "../hook/Trips";
+import Trips from "../hooks/Trips";
 
 export default function AdminHomePage() {
     const navigate = useNavigate();
