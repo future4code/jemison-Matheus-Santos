@@ -10,8 +10,6 @@ export default function CreateTripPage() {
         navigate("/admin/trips/list");
     };
 
-  
-
     return (
         <div>
             <Form>

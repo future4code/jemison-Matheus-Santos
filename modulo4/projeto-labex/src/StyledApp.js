@@ -39,6 +39,19 @@ button {
     background: rgb(182, 212, 227);
   }
 }
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding:26px 20px;
+    width: 410px;
+    list-style: none;
+
+    span{
+        font-weight: bold;
+    }
+}
 `;
 
 /* Container */
@@ -77,4 +90,31 @@ export const Input = styled.input`
     border-radius: 10px;
     padding: 4px 8px;
     height: 40px;
+`;
+
+/* AdminHomePage */
+export const Viagens = styled.div`
+    margin-top: 35px;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 4px;
+        padding: 10px 20px;
+        margin: 20px 0;
+        width: 500px;
+        height: 70px;
+        box-shadow: rgb(0 0 0 / 30%) 0px 4px 8px 0px;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(182, 212, 227);
+        }
+
+        img {
+            display: inline-block;
+            width: 24px;
+        }
+    }
 `;

@@ -3,6 +3,7 @@
 import React from "react";
 import { Botoes } from "../StyledApp";
 import { useNavigate } from "react-router-dom";
+import Trips from "../hook/Trips";
 
 export default function AdminHomePage() {
     const navigate = useNavigate();
@@ -28,6 +29,8 @@ export default function AdminHomePage() {
                 <button onClick={goToCreateTripPage}>Criar Viagem</button>
                 <button onClick={goToLoginPage}>Logout</button>
             </Botoes>
+
+            <Trips  />
         </div>
     );
 }
